@@ -1,0 +1,54 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  color: #1b1b1b;
+  background: #f5f2ec;
+}
+
+.site-header {
+  position: fixed;
+  inset: 0 0 auto 0;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(245, 242, 236, .85);
+  backdrop-filter: blur(6px);
+}
+.site-header ul { display: flex; gap: 1.5rem; margin: 0; padding: 0; list-style: none; }
+.site-header a { color: inherit; text-decoration: none; }
+.logo { font-weight: 700; }
+
+section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; }
+
+.hero {
+  max-width: none;
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  text-align: center;
+  color: #3d5a45;
+}
+.hero__svg { width: min(90vw, 800px); height: auto; }
+.hero h1 { color: #1b1b1b; font-size: clamp(2rem, 6vw, 4rem); margin: 1rem 0 0; }
+
+.sliders article { margin-bottom: 3rem; }
+.swiper { height: 260px; }
+.swiper-slide {
+  display: grid;
+  place-items: center;
+  font-size: 1.5rem;
+  background: #d9d2c3;
+  border-radius: 8px;
+}
+
+.contacto { padding-top: 8rem; min-height: 80vh; }
+.contacto form { display: grid; gap: .75rem; max-width: 480px; }
+.contacto input, .contacto textarea, .contacto button { font: inherit; padding: .6rem; }
+
+.site-footer { padding: 2rem; text-align: center; }

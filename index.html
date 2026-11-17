@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Islas de Descomposición</title>
+  <meta name="description" content="Islas de Descomposición — one page con hero, texto y sliders.">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="#inicio">Islas de Descomposición</a>
+    <nav aria-label="Principal">
+      <ul>
+        <li><a href="#texto">Texto</a></li>
+        <li><a href="#sliders">Sliders</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero" aria-labelledby="hero-title">
+      <svg class="hero__svg" viewBox="0 0 800 400" role="img" aria-label="Islas abstractas">
+        <path d="M0 340 Q200 280 400 340 T800 340" fill="none" stroke="currentColor" stroke-width="3"/>
+      </svg>
+      <h1 id="hero-title">Islas de Descomposición</h1>
+    </section>
+
+    <section id="texto" class="texto" aria-labelledby="texto-title">
+      <h2 id="texto-title">Texto</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </section>
+
+    <section id="sliders" class="sliders" aria-labelledby="sliders-title">
+      <h2 id="sliders-title">Sliders</h2>
+
+      <article>
+        <h3>Slider 1</h3>
+        <div class="swiper swiper-1">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 1.1</div>
+            <div class="swiper-slide">Slide 1.2</div>
+            <div class="swiper-slide">Slide 1.3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
+
+      <article>
+        <h3>Slider 2</h3>
+        <div class="swiper swiper-2">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 2.1</div>
+            <div class="swiper-slide">Slide 2.2</div>
+            <div class="swiper-slide">Slide 2.3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
+
+      <article>
+        <h3>Slider 3</h3>
+        <div class="swiper swiper-3">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">Slide 3.1</div>
+            <div class="swiper-slide">Slide 3.2</div>
+            <div class="swiper-slide">Slide 3.3</div>
+          </div>
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2027 Islas de Descomposición · <a href="contacto.html">Contacto</a></p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.20/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
