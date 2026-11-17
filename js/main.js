@@ -1,4 +1,8 @@
-const lenis = new Lenis({ anchors: true });
+const lenis = new Lenis({
+  anchors: true,
+  orientation: 'horizontal',
+  gestureOrientation: 'both', // la rueda vertical mueve el scroll horizontal
+});
 
 function raf(time) {
   lenis.raf(time);

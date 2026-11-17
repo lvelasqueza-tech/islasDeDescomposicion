@@ -25,6 +25,19 @@ body {
 
 section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; }
 
+/* Scroll horizontal (solo index): los paneles se alinean en fila */
+.horizontal { overflow-y: hidden; }
+.horizontal main { display: flex; width: max-content; }
+.horizontal main > section {
+  flex: 0 0 100vw;
+  width: 100vw;
+  max-width: none;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+}
+.horizontal .site-footer { display: none; }
+
 .hero {
   max-width: none;
   min-height: 100vh;
@@ -37,8 +50,11 @@ section { padding: 6rem 2rem; max-width: 960px; margin: 0 auto; }
 .hero__svg { width: min(90vw, 800px); height: auto; }
 .hero h1 { color: #1b1b1b; font-size: clamp(2rem, 6vw, 4rem); margin: 1rem 0 0; }
 
-.sliders article { margin-bottom: 3rem; }
-.swiper { height: 260px; }
+.sliders { display: flex; flex-direction: column; gap: .75rem; padding-block: 5rem 1.5rem; }
+.sliders h2, .sliders h3 { margin: 0; }
+.sliders article { flex: 1; min-height: 0; display: flex; flex-direction: column; min-width: 0; }
+.sliders .swiper { flex: 1; min-height: 0; width: 100%; }
+.texto { align-content: center; }
 .swiper-slide {
   display: grid;
   place-items: center;
