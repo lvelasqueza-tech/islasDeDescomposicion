@@ -2,7 +2,7 @@
   --color-1: #1c1c1c;
   --color-2: #eaeaea;
   --section-gutter: clamp(3rem, 6vw, 7rem);
-  --section-copy-width: 60rem;
+  --section-copy-width: 60ch;
   --section-title-size: clamp(2.5rem, 10vw, 8rem);
   --section-subtitle-size: clamp(1.5rem, 3vw, 2rem);
   --section-body-size: clamp(1.125rem, 1.8vw, 1.5rem);
@@ -11,9 +11,50 @@
 
 *, *::before, *::after { box-sizing: border-box; }
 
+/* Scrollbar custom: fondo negro, barra blanca, hover gris */
+:root {
+  --scrollbar-track: #000;
+  --scrollbar-thumb: #fff;
+  --scrollbar-thumb-hover: #808080;
+  --scrollbar-size: 10px;
+}
+
+/* Firefox (no soporta ::-webkit-scrollbar ni hover en la barra) */
+@supports not selector(::-webkit-scrollbar) {
+  html {
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+}
+
+::-webkit-scrollbar {
+  width: var(--scrollbar-size);
+  height: var(--scrollbar-size);
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-corner {
+  background: var(--scrollbar-track);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--scrollbar-thumb);
+  border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: var(--scrollbar-thumb-hover);
+}
+
+@font-face {
+  font-family: 'Descompuesto';
+  src: url('./Descompuesto-Regular.woff2') format('woff2');
+}
+
+
 body {
   margin: 0;
-  font-family: 'Descompuesto', 'Descompuetso', sans-serif;
+  font-family: 'Descompuesto', sans-serif;
   line-height: 1.6;
   color: #1b1b1b;
   background-image: url('../recursos/jpgs/back-1.jpg');
