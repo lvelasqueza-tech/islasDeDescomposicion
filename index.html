@@ -11,8 +11,11 @@
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="horizontal">
+  <div class="scroll-background" aria-hidden="true"></div>
+  <div class="section-progress" aria-hidden="true"></div>
+
   <header class="site-header">
-    <a class="logo" href="#inicio">Islas de Descomposición</a>
+    <a class="logo" href="#inicio"></a>
     <nav aria-label="Principal">
       <ul>
         <li><a href="#texto">Texto</a></li>
@@ -24,16 +27,33 @@
 
   <main>
     <section id="inicio" class="hero" aria-labelledby="hero-title">
-      <svg class="hero__svg" viewBox="0 0 800 400" role="img" aria-label="Islas abstractas">
-        <path d="M0 340 Q200 280 400 340 T800 340" fill="none" stroke="currentColor" stroke-width="3"/>
-      </svg>
-      <h1 id="hero-title">Islas de Descomposición</h1>
+      <img src="recursos/svg/idd-logo-n.svg" alt="Islas de Descomposición" class="hero__logo">
+      
     </section>
 
     <section id="texto" class="texto" aria-labelledby="texto-title">
-      <h2 id="texto-title">Texto</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+      <div class="section-heading">
+        <h1 id="texto-title" class="section-title">Mi mamá habla<br>con la tierra</h1>
+        <p class="section-subtitle">Cómo mi mamá aprendió a leer su entorno a partir del dolor</p>
+      </div>
+    </section>
+
+    <section id="contexto" class="texto-cuerpo" aria-label="Contexto">
+      <p>En México enfrentamos una crisis humanitaria que registra la cifra en constante crecimiento de más de 135.000 personas desaparecidas hasta hoy. Los colectivos de búsqueda se han enfrentado a un Estado que desatiende e ignora esta dolorosa emergencia humanitaria y se han visto en la obligación de desarrollar metodologías propias que lleven a la justicia que por tanto tiempo han exigido.</p>
+    </section>
+
+    <section id="seccion-3" class="section-placeholder" aria-label="Sección 3 pendiente de contenido"></section>
+
+    <section id="antes-de-empezar" class="section-title-panel" aria-labelledby="antes-de-empezar-title">
+      <div class="section-intro-layout">
+        <h2 id="antes-de-empezar-title" class="section-title">Antes de empezar...</h2>
+        <div class="section-intro-copy">
+          <p>No soy yo la protagonista de esta historia.</p>
+          <p>Es mi hermana.</p>
+          <p>Y también es mi mamá, aunque ella nunca lo hubiera querido.</p>
+          <p>Esto es una pequeña recopilación de lo que entendí viéndola a ella aprender algo que ninguna madre debería. A leer el suelo.</p>
+        </div>
+      </div>
     </section>
 
     <section id="sliders" class="sliders" aria-labelledby="sliders-title">
